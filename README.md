@@ -18,7 +18,7 @@
 * Coming soon ;)
 
 ## Usage
-Just call next line from anywhere and RVCManager will animate the change of ```UIApplication.shared.keyWindow.rootViewController```
+Just call next line from anywhere and RVCManager will animate the change of root view controller
 
 ```
 RootViewControllerManager.shared.change(to: newViewController, withAnimation: .fade, animationDuration: 0.5)
