@@ -14,7 +14,18 @@
 		0C331CC922722E8C0004D0B8 /* RootViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C331CC822722E8C0004D0B8 /* RootViewControllerManager.swift */; };
 		0C331CCB227237620004D0B8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C331CCA227237620004D0B8 /* FirstViewController.swift */; };
 		0C331CCD2272377E0004D0B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C331CCC2272377E0004D0B8 /* SecondViewController.swift */; };
+		0CFE675D22D649AC0020B1B0 /* RVCManagerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE675C22D649AC0020B1B0 /* RVCManagerExampleUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CFE675F22D649AC0020B1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C331CA922722DF30004D0B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C331CB022722DF30004D0B8;
+			remoteInfo = RVCManagerExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C331CB122722DF30004D0B8 /* RVCManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RVCManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		0C331CC822722E8C0004D0B8 /* RootViewControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerManager.swift; sourceTree = "<group>"; };
 		0C331CCA227237620004D0B8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		0C331CCC2272377E0004D0B8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0CFE675A22D649AC0020B1B0 /* RVCManagerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RVCManagerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFE675C22D649AC0020B1B0 /* RVCManagerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVCManagerExampleUITests.swift; sourceTree = "<group>"; };
+		0CFE675E22D649AC0020B1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0C331CAE22722DF30004D0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFE675722D649AC0020B1B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +65,7 @@
 			children = (
 				0C331CC822722E8C0004D0B8 /* RootViewControllerManager.swift */,
 				0C331CB322722DF30004D0B8 /* RVCManagerExample */,
+				0CFE675B22D649AC0020B1B0 /* RVCManagerExampleUITests */,
 				0C331CB222722DF30004D0B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				0C331CB122722DF30004D0B8 /* RVCManagerExample.app */,
+				0CFE675A22D649AC0020B1B0 /* RVCManagerExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +91,15 @@
 				0C331CC022722DF50004D0B8 /* Info.plist */,
 			);
 			path = RVCManagerExample;
+			sourceTree = "<group>";
+		};
+		0CFE675B22D649AC0020B1B0 /* RVCManagerExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFE675C22D649AC0020B1B0 /* RVCManagerExampleUITests.swift */,
+				0CFE675E22D649AC0020B1B0 /* Info.plist */,
+			);
+			path = RVCManagerExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,18 +122,40 @@
 			productReference = 0C331CB122722DF30004D0B8 /* RVCManagerExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0CFE675922D649AC0020B1B0 /* RVCManagerExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFE676122D649AC0020B1B0 /* Build configuration list for PBXNativeTarget "RVCManagerExampleUITests" */;
+			buildPhases = (
+				0CFE675622D649AC0020B1B0 /* Sources */,
+				0CFE675722D649AC0020B1B0 /* Frameworks */,
+				0CFE675822D649AC0020B1B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CFE676022D649AC0020B1B0 /* PBXTargetDependency */,
+			);
+			name = RVCManagerExampleUITests;
+			productName = RVCManagerExampleUITests;
+			productReference = 0CFE675A22D649AC0020B1B0 /* RVCManagerExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0C331CA922722DF30004D0B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = MSKR;
 				TargetAttributes = {
 					0C331CB022722DF30004D0B8 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					0CFE675922D649AC0020B1B0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 0C331CB022722DF30004D0B8;
 					};
 				};
 			};
@@ -119,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				0C331CB022722DF30004D0B8 /* RVCManagerExample */,
+				0CFE675922D649AC0020B1B0 /* RVCManagerExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +186,13 @@
 				0C331CBF22722DF50004D0B8 /* LaunchScreen.storyboard in Resources */,
 				0C331CBC22722DF50004D0B8 /* Assets.xcassets in Resources */,
 				0C331CBA22722DF30004D0B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CFE675822D649AC0020B1B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0CFE675622D649AC0020B1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFE675D22D649AC0020B1B0 /* RVCManagerExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CFE676022D649AC0020B1B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C331CB022722DF30004D0B8 /* RVCManagerExample */;
+			targetProxy = 0CFE675F22D649AC0020B1B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0C331CB822722DF30004D0B8 /* Main.storyboard */ = {
@@ -322,6 +400,46 @@
 			};
 			name = Release;
 		};
+		0CFE676222D649AC0020B1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCD2MCUEP4;
+				INFOPLIST_FILE = RVCManagerExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mskr.RVCManagerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RVCManagerExample;
+			};
+			name = Debug;
+		};
+		0CFE676322D649AC0020B1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCD2MCUEP4;
+				INFOPLIST_FILE = RVCManagerExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mskr.RVCManagerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RVCManagerExample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +457,15 @@
 			buildConfigurations = (
 				0C331CC422722DF50004D0B8 /* Debug */,
 				0C331CC522722DF50004D0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFE676122D649AC0020B1B0 /* Build configuration list for PBXNativeTarget "RVCManagerExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFE676222D649AC0020B1B0 /* Debug */,
+				0CFE676322D649AC0020B1B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
