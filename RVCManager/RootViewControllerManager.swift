@@ -8,12 +8,12 @@
 
 import UIKit
 
-class RootViewControllerManager {
+public class RootViewControllerManager {
   
-  static let shared = RootViewControllerManager()
+  public static let shared = RootViewControllerManager()
   private var isTransitioning: Bool = false
   
-  func change(to nextViewController: UIViewController, withAnimation: AnimationType? = nil, animationDuration: Double? = nil, completion: (() -> ())? = nil) {
+  public func change(to nextViewController: UIViewController, withAnimation: AnimationType? = nil, animationDuration: Double? = nil, completion: (() -> ())? = nil) {
     let animationType = withAnimation ?? .none
     guard !isTransitioning else { return }
     guard let window = UIApplication.shared.keyWindow,
@@ -63,7 +63,7 @@ class RootViewControllerManager {
   
 }
 
-extension RootViewControllerManager  {
+public extension RootViewControllerManager  {
   enum AnimationType: Int {
     case verticalUp
     case verticalDown

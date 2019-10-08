@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RVCManager
 
 class SecondViewController: UIViewController {
 

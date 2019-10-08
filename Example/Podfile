@@ -1,0 +1,14 @@
+project 'RVCManagerExample.xcodeproj'
+
+platform :ios, '12.0'
+
+target 'RVCManagerExample' do
+  use_frameworks!
+
+  pod 'RVCManager', :git => '~/Developer/Personal/rvcmanager'
+end
+
+target 'RVCManagerExampleUITests' do
+    inherit! :search_paths
+    # Pods for testing
+end
