@@ -15,7 +15,13 @@
 * Just copy the file ```RootViewControllerManager.swift``` into your project
 
 ### CocoaPods
-* Coming soon ;)
+* Add the following line to your existing ```Podfile``` (or create a new one) and run ```pod install```
+```
+pod 'RVCManager', :git => 'https://github.com/moridaffy/rvcmanager'
+```
+
+### Swift Package Manager
+* Coming soon :)
 
 ## Usage
 Just call next line from anywhere and RVCManager will animate the change of root view controller
@@ -25,5 +31,7 @@ RootViewControllerManager.shared.change(to: newViewController, withAnimation: .f
 ```
 
 ## TODO
-- [ ] Setup ```pod```
+- [X] Setup ```pod```
+- [ ] Setup Swift Package Manager
 - [ ] Improve example project
+- [ ] Add tests

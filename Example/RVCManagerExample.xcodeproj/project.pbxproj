@@ -15,7 +15,7 @@
 		0C331CCD2272377E0004D0B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C331CCC2272377E0004D0B8 /* SecondViewController.swift */; };
 		0CFE675D22D649AC0020B1B0 /* RVCManagerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE675C22D649AC0020B1B0 /* RVCManagerExampleUITests.swift */; };
 		12E5C76FAE57E4FC0FECFFE7 /* Pods_RVCManagerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B4B42A25A01B96460B63D0 /* Pods_RVCManagerExample.framework */; };
-		EFB1A86D3155C63672BF5AC4 /* Pods_RVCManagerExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D69AF7B3118DDF5150B9B0E /* Pods_RVCManagerExampleUITests.framework */; };
+		5EE9A36E1F6A33A77BDA6710 /* libPods-RVCManagerExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC27AB7460758D71BFAAABF /* libPods-RVCManagerExampleUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		0CFE675C22D649AC0020B1B0 /* RVCManagerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVCManagerExampleUITests.swift; sourceTree = "<group>"; };
 		0CFE675E22D649AC0020B1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B4B42A25A01B96460B63D0 /* Pods_RVCManagerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RVCManagerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D69AF7B3118DDF5150B9B0E /* Pods_RVCManagerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RVCManagerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C4023E225826CF4C6D9AFD /* Pods-RVCManagerExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCManagerExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-RVCManagerExampleUITests/Pods-RVCManagerExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CC27AB7460758D71BFAAABF /* libPods-RVCManagerExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RVCManagerExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7E757AF36D7729F6F45E67 /* Pods-RVCManagerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCManagerExample.release.xcconfig"; path = "Target Support Files/Pods-RVCManagerExample/Pods-RVCManagerExample.release.xcconfig"; sourceTree = "<group>"; };
 		A397D2CCC8F45850358D72C0 /* Pods-RVCManagerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCManagerExample.debug.xcconfig"; path = "Target Support Files/Pods-RVCManagerExample/Pods-RVCManagerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		B245EA8E398879FB48D93BA6 /* Pods-RVCManagerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVCManagerExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-RVCManagerExampleUITests/Pods-RVCManagerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB1A86D3155C63672BF5AC4 /* Pods_RVCManagerExampleUITests.framework in Frameworks */,
+				5EE9A36E1F6A33A77BDA6710 /* libPods-RVCManagerExampleUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				41B4B42A25A01B96460B63D0 /* Pods_RVCManagerExample.framework */,
-				6D69AF7B3118DDF5150B9B0E /* Pods_RVCManagerExampleUITests.framework */,
+				7CC27AB7460758D71BFAAABF /* libPods-RVCManagerExampleUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
