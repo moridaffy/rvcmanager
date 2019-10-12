@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
 
   spec.framework = "UIKit"
 
-  spec.source_files = "RVCManager/**/*.{swift}"
-  spec.resources = "RVCManager/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
+  spec.source_files = "Sources/**/*.{swift}"
+  spec.resources = "Sources/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
   spec.swift_version = "4.2"
 end

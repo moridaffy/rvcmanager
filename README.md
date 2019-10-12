@@ -21,17 +21,27 @@ pod 'RVCManager', :git => 'https://github.com/moridaffy/rvcmanager'
 ```
 
 ### Swift Package Manager
-* Coming soon :)
+* Enter following URL as package repository URL: ```https://github.com/moridaffy/rvcmanager/```
+* Use `master` branch
 
 ## Usage
-Just call next line from anywhere and RVCManager will animate the change of root view controller
+Here's the example of how you can use RVCManager to quickly change your UIWindow's root view controller from anywhere using a single line of code:
 
-```
-RootViewControllerManager.shared.change(to: newViewController, withAnimation: .fade, animationDuration: 0.5)
+```swift
+import RVCManager
+
+class ViewController: UIViewController {
+
+  private func logoutButtonTapped() {
+    guard let authViewController = UIStoryboard(name: "Auth", bundle: nil).instantiateInitialViewController() as? AuthViewController else { return }
+    RootViewControllerManager.shared.change(to: authViewController, withAnimation: .verticalUp, animationDuration: 0.5)
+  }
+
+}
 ```
 
 ## TODO
 - [X] Setup ```pod```
-- [ ] Setup Swift Package Manager
+- [X] Setup Swift Package Manager
 - [ ] Improve example project
 - [ ] Add tests

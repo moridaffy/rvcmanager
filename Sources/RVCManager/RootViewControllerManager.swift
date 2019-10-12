@@ -10,6 +10,9 @@ import UIKit
 
 public class RootViewControllerManager {
   
+  
+  let a = UIStoryboard(name: "ad", bundle: nil).instantiateInitialViewController()
+  
   public static let shared = RootViewControllerManager()
   private var isTransitioning: Bool = false
   
